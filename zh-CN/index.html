@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sphinx-intl: 用于支持 Sphinx 的翻译工具 &mdash; sphinx-intl 2.0.1 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="快速入门" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> sphinx-intl
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refs.html">参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev.html">开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">作者</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">CHANGES</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">sphinx-intl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>sphinx-intl: 用于支持 Sphinx 的翻译工具</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sphinx-intl-translation-support-utility-for-sphinx">
+<h1>sphinx-intl: 用于支持 Sphinx 的翻译工具<a class="headerlink" href="#sphinx-intl-translation-support-utility-for-sphinx" title="永久链接至标题"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">sphinx-intl</span></code> 是一个实用工具，它提供了一些功能使得翻译和应用翻译到 <a class="reference external" href="http://sphinx-doc.org">Sphinx</a> 生成的文件变得容易。可选：支持 Transifex 服务，用于 <a class="reference external" href="http://sphinx-doc.org">Sphinx</a>  翻译。</p>
+<a class="reference external image-reference" href="http://sphinx-intl.rtfd.io/"><img alt="Read the Docs (master)" src="https://img.shields.io/readthedocs/sphinx-intl/master.svg" /></a>
+<a class="reference external image-reference" href="http://pypi.org/p/sphinx-intl"><img alt="PyPI" src="https://img.shields.io/pypi/v/sphinx-intl.svg" /></a>
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/sphinx-intl.svg" /><a class="reference external image-reference" href="https://github.com/sphinx-doc/sphinx-intl/blob/master/LICENSE"><img alt="许可" src="https://img.shields.io/github/license/sphinx-doc/sphinx-intl.svg" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/sphinx-doc/sphinx-intl"><img alt="Travis (.org) branch" src="https://img.shields.io/travis/sphinx-doc/sphinx-intl/master.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/sphinx-doc/sphinx-intl"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sphinx-doc/sphinx-intl.svg?style=social&amp;label=Stars" /></a>
+<section id="documentation">
+<h2>文档<a class="headerlink" href="#documentation" title="永久链接至标题"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://sphinx-intl.rtfd.io/">http://sphinx-intl.rtfd.io/</a></p></li>
+</ul>
+</section>
+<section id="license">
+<h2>许可<a class="headerlink" href="#license" title="永久链接至标题"></a></h2>
+<p>在 BSD 许可证下授权。</p>
+</section>
+<section id="contents">
+<h2>目录<a class="headerlink" href="#contents" title="永久链接至标题"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#installation">安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#quickstart-for-sphinx-translation">Sphinx 翻译的快速启动</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quickstart.html#quickstart-console-log">快速启动控制台日志</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">基础</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#basic-features">基本功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#optional-features">可选功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic.html#installation">安装</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="refs.html">参考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="refs.html#commands">命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="refs.html#environment-variables">环境变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="refs.html#sphinx-conf-py">Sphinx conf.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="refs.html#makefile-make-bat">Makefile / make.bat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev.html">开发</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev.html#code-of-conduct">行为准则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev.html#contribution-guideline">贡献指南</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#report-issue">报告议题</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#pull-request">Pull Request</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dev.html#setup-development-environment">设置开发环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev.html#testing">测试</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#run-test">运行测试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#ci-continuous-integration">CI（持续化集成）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dev.html#releasing">发布</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#new-package-version">新的软件包版本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev.html#updated-documentation">更新文档</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">作者</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="authors.html#original">原创</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">CHANGES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#unreleased">2.1.0 (unreleased)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id1">2.0.1 (2020/04/11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id7">2.0.0 (2019/06/01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id13">1.0.0 (2019/05/12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id19">0.9.12 (2019/05/12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id25">0.9.11 (2018/02/12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id31">0.9.10 (2017/09/13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id34">0.9.9 (2016/01/17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id36">0.9.8 (2015/12/28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id41">0.9.7 (2015/11/07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id43">0.9.6 (2015/09/22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id46">0.9.5 (2014/07/10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id50">0.9.4 (2013/12/10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id54">0.9.3 (2013/04/20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id56">0.9.2 (2013/4/11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id59">0.9.1 (2013/4/10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id64">0.9.0 (2013/4/7)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart.html" class="btn btn-neutral float-right" title="快速入门" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Sphinx team.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

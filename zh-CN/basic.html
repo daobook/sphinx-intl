@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基础 &mdash; sphinx-intl 2.0.1 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="参考" href="refs.html" />
+    <link rel="prev" title="快速入门" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> sphinx-intl
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基础</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-features">基本功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-features">可选功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">安装</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="refs.html">参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev.html">开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">作者</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">CHANGES</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx-intl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>基础</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/basic.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic">
+<h1>基础<a class="headerlink" href="#basic" title="永久链接至标题"></a></h1>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#basic-features" id="id2">基本功能</a></p></li>
+<li><p><a class="reference internal" href="#optional-features" id="id3">可选功能</a></p></li>
+<li><p><a class="reference internal" href="#installation" id="id4">安装</a></p></li>
+</ul>
+</div>
+<section id="basic-features">
+<h2><a class="toc-backref" href="#id2">基本功能</a><a class="headerlink" href="#basic-features" title="永久链接至标题"></a></h2>
+<ul class="simple">
+<li><p>从 pot 文件创建或更新 po 文件。</p></li>
+<li><p>从 po 文件建立 mo 文件。</p></li>
+</ul>
+</section>
+<section id="optional-features">
+<h2><a class="toc-backref" href="#id3">可选功能</a><a class="headerlink" href="#optional-features" title="永久链接至标题"></a></h2>
+<p>这些功能依赖于 <a class="reference external" href="https://pypi.python.org/pypi/transifex-client">transifex-client</a> 库。请参考 <a class="reference internal" href="#installation">安装</a> 部分来安装它。</p>
+<ul class="simple">
+<li><p>从环境变量中创建 <code class="docutils literal notranslate"><span class="pre">.transifexrc</span></code> 文件，无需交互式输入。</p></li>
+<li><p>创建 <code class="docutils literal notranslate"><span class="pre">.tx/config</span></code> 文件，无需交互式输入。</p></li>
+<li><p>从 locale/pot 文件中自动更新 <code class="docutils literal notranslate"><span class="pre">.tx/config</span></code> 文件。</p></li>
+<li><p>从 locale 目录下的 po 文件建立 mo 文件。</p></li>
+</ul>
+<p>你需要使用 <cite>tx</cite> 命令来实现以下功能。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tx</span> <span class="pre">push</span> <span class="pre">-s</span></code> ：推送 pot（翻译目录）到 transifex。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tx</span> <span class="pre">pull</span> <span class="pre">-l</span> <span class="pre">ja</span></code> : 从 transifex 拉取 po（翻译的目录）。</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2><a class="toc-backref" href="#id4">安装</a><a class="headerlink" href="#installation" title="永久链接至标题"></a></h2>
+<p>强烈推荐：使用 virtualenv/venv 来完成这个程序</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx-intl
+</pre></div>
+</div>
+<p>如果你想使用 <a class="reference internal" href="#optional-features">可选功能</a>，你需要安装额外的库</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx-intl[transifex]
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="快速入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="refs.html" class="btn btn-neutral float-right" title="参考" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Sphinx team.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

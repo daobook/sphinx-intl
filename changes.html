@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHANGES &mdash; sphinx-intl 2.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="AUTHORS" href="authors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> sphinx-intl
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refs.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">AUTHORS</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CHANGES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#unreleased">2.1.0 (unreleased)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#environments">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incompatibility">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.0.1 (2020/04/11)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">2.0.0 (2019/06/01)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">1.0.0 (2019/05/12)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">0.9.12 (2019/05/12)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">0.9.11 (2018/02/12)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id31">0.9.10 (2017/09/13)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id32">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id34">0.9.9 (2016/01/17)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id36">0.9.8 (2015/12/28)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id37">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id38">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id39">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id40">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id41">0.9.7 (2015/11/07)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id42">Environments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id43">0.9.6 (2015/09/22)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id44">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id45">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id46">0.9.5 (2014/07/10)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id47">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id48">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id49">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id50">0.9.4 (2013/12/10)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id51">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id52">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id53">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id54">0.9.3 (2013/04/20)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id55">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id56">0.9.2 (2013/4/11)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id57">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id58">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id59">0.9.1 (2013/4/10)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id60">Environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id61">Incompatibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id62">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id63">Bug Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id64">0.9.0 (2013/4/7)</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx-intl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>CHANGES</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/changes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changes">
+<h1>CHANGES<a class="headerlink" href="#changes" title="Permalink to this headline"></a></h1>
+<section id="unreleased">
+<h2>2.1.0 (unreleased)<a class="headerlink" href="#unreleased" title="Permalink to this headline"></a></h2>
+<section id="environments">
+<h3>Environments<a class="headerlink" href="#environments" title="Permalink to this headline"></a></h3>
+</section>
+<section id="incompatibility">
+<h3>Incompatibility<a class="headerlink" href="#incompatibility" title="Permalink to this headline"></a></h3>
+</section>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline"></a></h3>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h3>
+</section>
+<section id="bug-fixes">
+<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#55: FileNotFoundError on update-txconfig-resources in the subdirectory</p></li>
+</ul>
+</section>
+</section>
+<section id="id1">
+<h2>2.0.1 (2020/04/11)<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<section id="id2">
+<h3>Environments<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id3">
+<h3>Incompatibility<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id4">
+<h3>Features<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id5">
+<h3>Documentation<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id6">
+<h3>Bug Fixes<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#38: transifex: Sort dirs and files alphabetically</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2>2.0.0 (2019/06/01)<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h2>
+<section id="id8">
+<h3>Environments<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#31 Drop supporting Python-2.7</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Incompatibility<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id10">
+<h3>Features<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id11">
+<h3>Documentation<a class="headerlink" href="#id11" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id12">
+<h3>Bug Fixes<a class="headerlink" href="#id12" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="id13">
+<h2>1.0.0 (2019/05/12)<a class="headerlink" href="#id13" title="Permalink to this headline"></a></h2>
+<section id="id14">
+<h3>Environments<a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Adopt to <a class="reference external" href="https://semver.org/spec/v2.0.0.html">semver</a></p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>Incompatibility<a class="headerlink" href="#id15" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id16">
+<h3>Features<a class="headerlink" href="#id16" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id17">
+<h3>Documentation<a class="headerlink" href="#id17" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#6: <a class="reference external" href="http://sphinx-intl.rtfd.io/">http://sphinx-intl.rtfd.io/</a></p></li>
+<li><p>#23: Add working example for generating pot/po files</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Bug Fixes<a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="id19">
+<h2>0.9.12 (2019/05/12)<a class="headerlink" href="#id19" title="Permalink to this headline"></a></h2>
+<section id="id20">
+<h3>Environments<a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p>Drop supporting Python-3.4</p></li>
+<li><p>Add supporting Python-3.7.</p>
+<p>#25: Python-3.7 introduce <code class="docutils literal notranslate"><span class="pre">__dir__</span></code> module function by <span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0562"><strong>PEP 562</strong></a>, so the
+attribute must not override for another purpose. Thanks to Julien Enselme.</p>
+</li>
+</ul>
+</section>
+<section id="id21">
+<h3>Incompatibility<a class="headerlink" href="#id21" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#27: <cite>settings</cite> resource name will be renamed to <cite>settings_</cite> on Transifex.
+Thanks to Anthony.</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Features<a class="headerlink" href="#id22" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#28,#29: Add option <cite>‘-w’, ‘–line-width’</cite> for the maximum line width of PO files.
+Thanks to Armand Ciejak.</p></li>
+</ul>
+</section>
+<section id="id23">
+<h3>Documentation<a class="headerlink" href="#id23" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#22: <code class="docutils literal notranslate"><span class="pre">`_build/locale</span></code> (for old sphinx) -&gt; <code class="docutils literal notranslate"><span class="pre">_build/gettext</span></code> (for current sphinx)</p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>Bug Fixes<a class="headerlink" href="#id24" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="id25">
+<h2>0.9.11 (2018/02/12)<a class="headerlink" href="#id25" title="Permalink to this headline"></a></h2>
+<section id="id26">
+<h3>Environments<a class="headerlink" href="#id26" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Support transifex-client~=0.13</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3>Incompatibility<a class="headerlink" href="#id27" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id28">
+<h3>Features<a class="headerlink" href="#id28" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#17,#18: Adding –tag -t option, to pass tags from arguments to conf.py.</p></li>
+</ul>
+<dl class="simple">
+<dt>to</dt><dd><p>Claudio Alarcon-Reyes.</p>
+</dd>
+</dl>
+</section>
+<section id="id29">
+<h3>Documentation<a class="headerlink" href="#id29" title="Permalink to this headline"></a></h3>
+</section>
+<section id="id30">
+<h3>Bug Fixes<a class="headerlink" href="#id30" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="id31">
+<h2>0.9.10 (2017/09/13)<a class="headerlink" href="#id31" title="Permalink to this headline"></a></h2>
+<section id="id32">
+<h3>Environments<a class="headerlink" href="#id32" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Drop supporting Python-3.3 and 2.6</p></li>
+<li><p>Add supporting Python-3.6</p></li>
+</ul>
+</section>
+<section id="id33">
+<h3>Bug Fixes<a class="headerlink" href="#id33" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Unit tests overwrite real .transifexrc file in HOME directory.</p></li>
+<li><p>#7, #8: Added <cite>tags</cite> variable for conf.py. Thanks to Dongping Xie.</p></li>
+<li><p>#15: default value of <code class="docutils literal notranslate"><span class="pre">locale_dirs</span></code> must be <code class="docutils literal notranslate"><span class="pre">['locales']</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">['locale']</span></code>. Thanks to cocoatomo.</p></li>
+</ul>
+</section>
+</section>
+<section id="id34">
+<h2>0.9.9 (2016/01/17)<a class="headerlink" href="#id34" title="Permalink to this headline"></a></h2>
+<section id="id35">
+<h3>Bug Fixes<a class="headerlink" href="#id35" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>On Python-3 environment, ‘update’ command breaks po files.</p></li>
+<li><p>#4: ‘fuzzy’ cause crush on ‘update’ command.</p></li>
+</ul>
+</section>
+</section>
+<section id="id36">
+<h2>0.9.8 (2015/12/28)<a class="headerlink" href="#id36" title="Permalink to this headline"></a></h2>
+<section id="id37">
+<h3>Environments<a class="headerlink" href="#id37" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add supporting Python-3.5</p></li>
+<li><p>Drop supporting Python-2.5</p></li>
+<li><p>Use transifex-client&gt;=0.11 for all environments</p></li>
+<li><p>Switch test runner to py.test</p></li>
+<li><p>BB#11 Switch to babel that is used with Sphinx.</p></li>
+</ul>
+</section>
+<section id="id38">
+<h3>Incompatibility<a class="headerlink" href="#id38" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><cite>glossary</cite> resource name will be renamed to <cite>glossary_</cite> on Transifex.
+Since Aug 2015, Transifex reject ‘glossary’ resource name because the slug is reserved.</p></li>
+</ul>
+</section>
+<section id="id39">
+<h3>Features<a class="headerlink" href="#id39" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#2,#3: Add option to create MO files in a separate directory. Thanks to Campbell Barton.</p></li>
+</ul>
+</section>
+<section id="id40">
+<h3>Bug Fixes<a class="headerlink" href="#id40" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>#1: update_txconfig_resources command on Python 3.4/3.5 causes KeyError.</p></li>
+</ul>
+</section>
+</section>
+<section id="id41">
+<h2>0.9.7 (2015/11/07)<a class="headerlink" href="#id41" title="Permalink to this headline"></a></h2>
+<section id="id42">
+<h3>Environments<a class="headerlink" href="#id42" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB#8 Drop supporting Python-3.1 and 3.2</p></li>
+<li><p>BB#10 Depends to click for command-line feature.</p></li>
+</ul>
+</section>
+</section>
+<section id="id43">
+<h2>0.9.6 (2015/09/22)<a class="headerlink" href="#id43" title="Permalink to this headline"></a></h2>
+<section id="id44">
+<h3>Features<a class="headerlink" href="#id44" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB-PR#9: Support <code class="docutils literal notranslate"><span class="pre">fuzzy</span></code> translations. Thanks to Guilherme Brondani Torri.</p></li>
+<li><p>BB-PR#8: Detects pot_dir automatically if sphinx has generated. Thanks to
+Takeshi Komiya.</p></li>
+</ul>
+</section>
+<section id="id45">
+<h3>Bug Fixes<a class="headerlink" href="#id45" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB-PR#6: update_txconfig_resources command raise errors with pot filename
+including symbols and spaces. Thanks to Takeshi Komiya.</p></li>
+<li><p>BB-PR#7: sphinx-intl could not find conf.py in projects separating build
+and source directories. Thanks to Takeshi Komiya.</p></li>
+<li><p>BB-PR#10: Add __file__ to conf.py’s namespace.</p></li>
+<li><p>On Windows environment, now using “transifex&lt;0.9” because “transifex&gt;=0.9” requires
+unnecessary py2exe installation.</p></li>
+</ul>
+</section>
+</section>
+<section id="id46">
+<h2>0.9.5 (2014/07/10)<a class="headerlink" href="#id46" title="Permalink to this headline"></a></h2>
+<section id="id47">
+<h3>Environments<a class="headerlink" href="#id47" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add supporting Python-3.4</p></li>
+</ul>
+</section>
+<section id="id48">
+<h3>Features<a class="headerlink" href="#id48" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB-PR#3: Skip building process if mo file is newer than po file. Thanks to
+Nozomu Kaneko.</p></li>
+</ul>
+</section>
+<section id="id49">
+<h3>Bug Fixes<a class="headerlink" href="#id49" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB-PR#2, BB-PR#4: <code class="docutils literal notranslate"><span class="pre">update-txconfig-resources</span></code> disregarded <code class="docutils literal notranslate"><span class="pre">--pot-dir</span></code> option.
+Thanks to Giacomo Spettoli, Takeshi Komiya.</p></li>
+<li><p>BB-PR#5: <code class="docutils literal notranslate"><span class="pre">update-txconfig-resources</span></code> command raise errors when project name
+includes spaces and dots. Thanks to Takeshi Komiya.</p></li>
+</ul>
+</section>
+</section>
+<section id="id50">
+<h2>0.9.4 (2013/12/10)<a class="headerlink" href="#id50" title="Permalink to this headline"></a></h2>
+<section id="id51">
+<h3>Environments<a class="headerlink" href="#id51" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Now using setuptools instead of distribute.</p></li>
+</ul>
+</section>
+<section id="id52">
+<h3>Features<a class="headerlink" href="#id52" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>BB#3: <code class="docutils literal notranslate"><span class="pre">update-txconfig-resources</span></code> command now detect project-name from
+<code class="docutils literal notranslate"><span class="pre">.tx/config</span></code> that already exists.</p></li>
+</ul>
+</section>
+<section id="id53">
+<h3>Bug Fixes<a class="headerlink" href="#id53" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>sphinx-intl didn’t use SPHINXINTL_CONFIG environment value.</p></li>
+<li><p>tox test raises a error with transifex-client-0.10</p></li>
+</ul>
+</section>
+</section>
+<section id="id54">
+<h2>0.9.3 (2013/04/20)<a class="headerlink" href="#id54" title="Permalink to this headline"></a></h2>
+<section id="id55">
+<h3>Bug Fixes<a class="headerlink" href="#id55" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>because <code class="docutils literal notranslate"><span class="pre">--config</span></code> option did not consider directory path, locale_dir
+did not contain directory path to <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.</p></li>
+</ul>
+</section>
+</section>
+<section id="id56">
+<h2>0.9.2 (2013/4/11)<a class="headerlink" href="#id56" title="Permalink to this headline"></a></h2>
+<section id="id57">
+<h3>Features<a class="headerlink" href="#id57" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">stat</span></code> command for displaying statistics like ‘msgfmt –statistics’.</p></li>
+<li><p>Documentation and error messages are improved.</p></li>
+</ul>
+</section>
+<section id="id58">
+<h3>Bug Fixes<a class="headerlink" href="#id58" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>update command did not detect pot/po difference when translated
+count and untranslated count are not difference.</p></li>
+</ul>
+</section>
+</section>
+<section id="id59">
+<h2>0.9.1 (2013/4/10)<a class="headerlink" href="#id59" title="Permalink to this headline"></a></h2>
+<section id="id60">
+<h3>Environments<a class="headerlink" href="#id60" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add flake8 test and fix some errors.</p></li>
+</ul>
+</section>
+<section id="id61">
+<h3>Incompatibility<a class="headerlink" href="#id61" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Drop multiple <code class="docutils literal notranslate"><span class="pre">locale</span> <span class="pre">directories</span></code> feature. Now use only first directory of
+<code class="docutils literal notranslate"><span class="pre">locale_dirs</span></code> in conf.py.</p></li>
+</ul>
+</section>
+<section id="id62">
+<h3>Features<a class="headerlink" href="#id62" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add –pot-dir option. default is <code class="docutils literal notranslate"><span class="pre">pot</span></code> directory under <code class="docutils literal notranslate"><span class="pre">locale_dir</span></code>.
+If you using Sphinx default settings, <code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">_build/locale</span></code> is useful.</p></li>
+<li><p>Add append/deprecated msgid count information for <code class="docutils literal notranslate"><span class="pre">update</span></code> command.</p></li>
+</ul>
+</section>
+<section id="id63">
+<h3>Bug Fixes<a class="headerlink" href="#id63" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fix: <code class="docutils literal notranslate"><span class="pre">-c</span></code> option is not working. Thanks &#64;tk0miya!</p></li>
+</ul>
+</section>
+</section>
+<section id="id64">
+<h2>0.9.0 (2013/4/7)<a class="headerlink" href="#id64" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>First release that provides these commands:</p>
+<ul>
+<li><p>update</p></li>
+<li><p>build</p></li>
+<li><p>create-transifexrc</p></li>
+<li><p>create-txconfig</p></li>
+<li><p>update-txconfig-resources</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="authors.html" class="btn btn-neutral float-left" title="AUTHORS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Sphinx team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

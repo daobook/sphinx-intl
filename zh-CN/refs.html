@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>参考 &mdash; sphinx-intl 2.0.1 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="开发" href="dev.html" />
+    <link rel="prev" title="基础" href="basic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> sphinx-intl
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">基础</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">参考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#commands">命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-variables">环境变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-conf-py">Sphinx conf.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#makefile-make-bat">Makefile / make.bat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev.html">开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">作者</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">CHANGES</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx-intl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>参考</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/refs.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="references">
+<h1>参考<a class="headerlink" href="#references" title="永久链接至标题"></a></h1>
+<div class="contents local topic" id="id1">
+<ul class="simple">
+<li><p><a class="reference internal" href="#commands" id="id2">命令</a></p></li>
+<li><p><a class="reference internal" href="#environment-variables" id="id3">环境变量</a></p></li>
+<li><p><a class="reference internal" href="#sphinx-conf-py" id="id4">Sphinx conf.py</a></p></li>
+<li><p><a class="reference internal" href="#makefile-make-bat" id="id5">Makefile / make.bat</a></p></li>
+</ul>
+</div>
+<section id="commands">
+<h2><a class="toc-backref" href="#id2">命令</a><a class="headerlink" href="#commands" title="永久链接至标题"></a></h2>
+<p>键入 <cite>sphinx-intl</cite>，不带参数，选项显示命令帮助。</p>
+</section>
+<section id="environment-variables">
+<h2><a class="toc-backref" href="#id3">环境变量</a><a class="headerlink" href="#environment-variables" title="永久链接至标题"></a></h2>
+<p>所有的命令行选项都可以用环境变量来设置，格式为 SPHINXINTL_&lt;UPPER_LONG_NAME&gt;。破折号（-）必须用下划线（_）代替。</p>
+<p>例如，要设置语言</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">SPHINXINTL_LANGUAGE</span><span class="o">=</span><span class="n">de</span><span class="p">,</span><span class="n">ja</span>
+</pre></div>
+</div>
+<p>这和直接把选项传给 sphinx-intl 一样</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">intl</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">language</span><span class="o">=</span><span class="n">de</span> <span class="o">--</span><span class="n">language</span><span class="o">=</span><span class="n">ja</span>
+</pre></div>
+</div>
+</section>
+<section id="sphinx-conf-py">
+<h2><a class="toc-backref" href="#id4">Sphinx conf.py</a><a class="headerlink" href="#sphinx-conf-py" title="永久链接至标题"></a></h2>
+<p>如果下面的设置不存在，请添加到 Sphinx 文档的 conf.py 中</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">locale_dirs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;locale/&#39;</span><span class="p">]</span>   <span class="c1">#for example</span>
+<span class="n">gettext_compact</span> <span class="o">=</span> <span class="kc">False</span>     <span class="c1">#optional</span>
+</pre></div>
+</div>
+</section>
+<section id="makefile-make-bat">
+<h2><a class="toc-backref" href="#id5">Makefile / make.bat</a><a class="headerlink" href="#makefile-make-bat" title="永久链接至标题"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">gettext</span></code> 会在 <cite>_build/gettext</cite> 目录下生成 pot 文件，但是如果将 pot 文件生成到 <cite>locale/pot</cite> 目录下会更方便。你可以通过把 <cite>_build/gettext</cite> 替换成 <cite>locale/pot</cite> 在你的 <cite>Makefile</cite> 和/或由 sphinx-quickstart 生成的 <cite>make.bat</cite> 中实现。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="basic.html" class="btn btn-neutral float-left" title="基础" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="dev.html" class="btn btn-neutral float-right" title="开发" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 Sphinx team.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
