@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Sphinx team
+# This file is distributed under the same license as the sphinx-intl
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinx-intl 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-20 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../basic.rst:3
+msgid "Basic"
+msgstr "基础"
+
+#: ../../basic.rst:9
+msgid "Basic Features"
+msgstr "基本功能"
+
+#: ../../basic.rst:11
+msgid "create or update po files from pot files."
+msgstr "从 pot 文件创建或更新 po 文件。"
+
+#: ../../basic.rst:12
+msgid "build mo files from po files."
+msgstr "从 po 文件建立 mo 文件。"
+
+#: ../../basic.rst:15
+msgid "Optional features"
+msgstr "可选功能"
+
+#: ../../basic.rst:16
+msgid ""
+"These features depends to `transifex-client`_ library. Please refer "
+"Installation_ section to install it."
+msgstr "这些功能依赖于 `transifex-client`_ 库。请参考 安装_ 部分来安装它。"
+
+#: ../../basic.rst:19
+msgid ""
+"create ``.transifexrc`` file from environment variable, without "
+"interactive input."
+msgstr "从环境变量中创建 ``.transifexrc`` 文件，无需交互式输入。"
+
+#: ../../basic.rst:21
+msgid "create ``.tx/config`` file without interactive input."
+msgstr "创建 ``.tx/config`` 文件，无需交互式输入。"
+
+#: ../../basic.rst:22
+msgid "update ``.tx/config`` file from locale/pot files automatically."
+msgstr "从 locale/pot 文件中自动更新 ``.tx/config`` 文件。"
+
+#: ../../basic.rst:23
+msgid "build mo files from po files in the locale directory."
+msgstr "从 locale 目录下的 po 文件建立 mo 文件。"
+
+#: ../../basic.rst:25
+msgid "You need to use `tx` command for below features:"
+msgstr "你需要使用 `tx` 命令来实现以下功能。"
+
+#: ../../basic.rst:27
+msgid "``tx push -s`` : push pot (translation catalogs) to transifex."
+msgstr "``tx push -s`` ：推送 pot（翻译目录）到 transifex。"
+
+#: ../../basic.rst:28
+msgid "``tx pull -l ja`` : pull po (translated catalogs) from transifex."
+msgstr "``tx pull -l ja`` : 从 transifex 拉取 po（翻译的目录）。"
+
+#: ../../basic.rst:34
+msgid "Installation"
+msgstr "安装"
+
+#: ../../basic.rst:36
+msgid "Recommend strongly: use virtualenv/venv for this procedure::"
+msgstr "强烈推荐：使用 virtualenv/venv 来完成这个程序 ::"
+
+#: ../../basic.rst:40
+msgid ""
+"If you want to use `Optional Features`_, you need install additional "
+"library::"
+msgstr "如果你想使用 `可选功能`_，你需要安装额外的库 ::"
+

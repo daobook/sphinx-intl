@@ -12,15 +12,13 @@ version = release = __version__
 
 # -- General configuration ---------------------------------------------------
 
-extensions = [
-]
+extensions = []
 
 source_suffix = '.rst'
 master_doc = 'index'
-language = None
+language = 'zh_CN'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -28,5 +26,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for sphinx-intl example
 
-locale_dirs = ['locale/']   # po files will be created in this directory
-gettext_compact = False     # optional: avoid file concatenation in sub directories.
+locale_dirs = ['locales/']  # po files will be created in this directory
+gettext_compact = False  # optional: avoid file concatenation in sub directories.

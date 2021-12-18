@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Sphinx team
+# This file is distributed under the same license as the sphinx-intl
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinx-intl 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-20 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../../CHANGES.rst:3
+msgid "CHANGES"
+msgstr ""
+
+#: ../../../CHANGES.rst:6
+msgid "2.1.0 (unreleased)"
+msgstr ""
+
+#: ../../../CHANGES.rst:9 ../../../CHANGES.rst:27 ../../../CHANGES.rst:46
+#: ../../../CHANGES.rst:65 ../../../CHANGES.rst:88 ../../../CHANGES.rst:119
+#: ../../../CHANGES.rst:144 ../../../CHANGES.rst:171 ../../../CHANGES.rst:200
+#: ../../../CHANGES.rst:231 ../../../CHANGES.rst:253 ../../../CHANGES.rst:298
+msgid "Environments"
+msgstr ""
+
+#: ../../../CHANGES.rst:12 ../../../CHANGES.rst:30 ../../../CHANGES.rst:50
+#: ../../../CHANGES.rst:71 ../../../CHANGES.rst:96 ../../../CHANGES.rst:123
+#: ../../../CHANGES.rst:180 ../../../CHANGES.rst:303
+msgid "Incompatibility"
+msgstr ""
+
+#: ../../../CHANGES.rst:15 ../../../CHANGES.rst:33 ../../../CHANGES.rst:53
+#: ../../../CHANGES.rst:74 ../../../CHANGES.rst:102 ../../../CHANGES.rst:126
+#: ../../../CHANGES.rst:186 ../../../CHANGES.rst:209 ../../../CHANGES.rst:236
+#: ../../../CHANGES.rst:258 ../../../CHANGES.rst:282 ../../../CHANGES.rst:309
+msgid "Features"
+msgstr ""
+
+#: ../../../CHANGES.rst:18 ../../../CHANGES.rst:36 ../../../CHANGES.rst:56
+#: ../../../CHANGES.rst:77 ../../../CHANGES.rst:108 ../../../CHANGES.rst:134
+msgid "Documentation"
+msgstr ""
+
+#: ../../../CHANGES.rst:21 ../../../CHANGES.rst:39 ../../../CHANGES.rst:59
+#: ../../../CHANGES.rst:82 ../../../CHANGES.rst:113 ../../../CHANGES.rst:137
+#: ../../../CHANGES.rst:149 ../../../CHANGES.rst:161 ../../../CHANGES.rst:191
+#: ../../../CHANGES.rst:216 ../../../CHANGES.rst:242 ../../../CHANGES.rst:264
+#: ../../../CHANGES.rst:273 ../../../CHANGES.rst:288 ../../../CHANGES.rst:316
+msgid "Bug Fixes"
+msgstr ""
+
+#: ../../../CHANGES.rst:24
+msgid "2.0.1 (2020/04/11)"
+msgstr ""
+
+#: ../../../CHANGES.rst:40
+msgid "#38: transifex: Sort dirs and files alphabetically"
+msgstr ""
+
+#: ../../../CHANGES.rst:43
+msgid "2.0.0 (2019/06/01)"
+msgstr ""
+
+#: ../../../CHANGES.rst:47
+msgid "#31 Drop supporting Python-2.7"
+msgstr ""
+
+#: ../../../CHANGES.rst:62
+msgid "1.0.0 (2019/05/12)"
+msgstr ""
+
+#: ../../../CHANGES.rst:66
+msgid "Adopt to semver_"
+msgstr ""
+
+#: ../../../CHANGES.rst:78
+msgid "#6: http://sphinx-intl.rtfd.io/"
+msgstr ""
+
+#: ../../../CHANGES.rst:79
+msgid "#23: Add working example for generating pot/po files"
+msgstr ""
+
+#: ../../../CHANGES.rst:85
+msgid "0.9.12 (2019/05/12)"
+msgstr ""
+
+#: ../../../CHANGES.rst:89
+msgid "Drop supporting Python-3.4"
+msgstr ""
+
+#: ../../../CHANGES.rst:90
+msgid "Add supporting Python-3.7."
+msgstr ""
+
+#: ../../../CHANGES.rst:92
+msgid ""
+"#25: Python-3.7 introduce ``__dir__`` module function by :pep:`562`, so "
+"the attribute must not override for another purpose. Thanks to Julien "
+"Enselme."
+msgstr ""
+
+#: ../../../CHANGES.rst:98
+msgid ""
+"#27: `settings` resource name will be renamed to `settings_` on "
+"Transifex. Thanks to Anthony."
+msgstr ""
+
+#: ../../../CHANGES.rst:104
+msgid ""
+"#28,#29: Add option `'-w', '--line-width'` for the maximum line width of "
+"PO files. Thanks to Armand Ciejak."
+msgstr ""
+
+#: ../../../CHANGES.rst:110
+msgid ""
+"#22: ```_build/locale`` (for old sphinx) -> ``_build/gettext`` (for "
+"current sphinx)"
+msgstr ""
+
+#: ../../../CHANGES.rst:116
+msgid "0.9.11 (2018/02/12)"
+msgstr ""
+
+#: ../../../CHANGES.rst:120
+msgid "Support transifex-client~=0.13"
+msgstr ""
+
+#: ../../../CHANGES.rst:127
+msgid "#17,#18: Adding --tag -t option, to pass tags from arguments to conf.py."
+msgstr ""
+
+#: ../../../CHANGES.rst:131
+msgid "to"
+msgstr ""
+
+#: ../../../CHANGES.rst:131
+msgid "Claudio Alarcon-Reyes."
+msgstr ""
+
+#: ../../../CHANGES.rst:141
+msgid "0.9.10 (2017/09/13)"
+msgstr ""
+
+#: ../../../CHANGES.rst:145
+msgid "Drop supporting Python-3.3 and 2.6"
+msgstr ""
+
+#: ../../../CHANGES.rst:146
+msgid "Add supporting Python-3.6"
+msgstr ""
+
+#: ../../../CHANGES.rst:151
+msgid "Unit tests overwrite real .transifexrc file in HOME directory."
+msgstr ""
+
+#: ../../../CHANGES.rst:152
+msgid "#7, #8: Added `tags` variable for conf.py. Thanks to Dongping Xie."
+msgstr ""
+
+#: ../../../CHANGES.rst:153
+msgid ""
+"#15: default value of ``locale_dirs`` must be ``['locales']`` instead of "
+"``['locale']``. Thanks to cocoatomo."
+msgstr ""
+
+#: ../../../CHANGES.rst:158
+msgid "0.9.9 (2016/01/17)"
+msgstr ""
+
+#: ../../../CHANGES.rst:163
+msgid "On Python-3 environment, 'update' command breaks po files."
+msgstr ""
+
+#: ../../../CHANGES.rst:164
+msgid "#4: 'fuzzy' cause crush on 'update' command."
+msgstr ""
+
+#: ../../../CHANGES.rst:168
+msgid "0.9.8 (2015/12/28)"
+msgstr ""
+
+#: ../../../CHANGES.rst:173
+msgid "Add supporting Python-3.5"
+msgstr ""
+
+#: ../../../CHANGES.rst:174
+msgid "Drop supporting Python-2.5"
+msgstr ""
+
+#: ../../../CHANGES.rst:175
+msgid "Use transifex-client>=0.11 for all environments"
+msgstr ""
+
+#: ../../../CHANGES.rst:176
+msgid "Switch test runner to py.test"
+msgstr ""
+
+#: ../../../CHANGES.rst:177
+msgid "BB#11 Switch to babel that is used with Sphinx."
+msgstr ""
+
+#: ../../../CHANGES.rst:182
+msgid ""
+"`glossary` resource name will be renamed to `glossary_` on Transifex. "
+"Since Aug 2015, Transifex reject 'glossary' resource name because the "
+"slug is reserved."
+msgstr ""
+
+#: ../../../CHANGES.rst:188
+msgid ""
+"#2,#3: Add option to create MO files in a separate directory. Thanks to "
+"Campbell Barton."
+msgstr ""
+
+#: ../../../CHANGES.rst:193
+msgid "#1: update_txconfig_resources command on Python 3.4/3.5 causes KeyError."
+msgstr ""
+
+#: ../../../CHANGES.rst:197
+msgid "0.9.7 (2015/11/07)"
+msgstr ""
+
+#: ../../../CHANGES.rst:202
+msgid "BB#8 Drop supporting Python-3.1 and 3.2"
+msgstr ""
+
+#: ../../../CHANGES.rst:203
+msgid "BB#10 Depends to click for command-line feature."
+msgstr ""
+
+#: ../../../CHANGES.rst:206
+msgid "0.9.6 (2015/09/22)"
+msgstr ""
+
+#: ../../../CHANGES.rst:211
+msgid ""
+"BB-PR#9: Support ``fuzzy`` translations. Thanks to Guilherme Brondani "
+"Torri."
+msgstr ""
+
+#: ../../../CHANGES.rst:212
+msgid ""
+"BB-PR#8: Detects pot_dir automatically if sphinx has generated. Thanks to"
+" Takeshi Komiya."
+msgstr ""
+
+#: ../../../CHANGES.rst:218
+msgid ""
+"BB-PR#6: update_txconfig_resources command raise errors with pot filename"
+" including symbols and spaces. Thanks to Takeshi Komiya."
+msgstr ""
+
+#: ../../../CHANGES.rst:220
+msgid ""
+"BB-PR#7: sphinx-intl could not find conf.py in projects separating build "
+"and source directories. Thanks to Takeshi Komiya."
+msgstr ""
+
+#: ../../../CHANGES.rst:222
+msgid "BB-PR#10: Add __file__ to conf.py's namespace."
+msgstr ""
+
+#: ../../../CHANGES.rst:223
+msgid ""
+"On Windows environment, now using \"transifex<0.9\" because "
+"\"transifex>=0.9\" requires unnecessary py2exe installation."
+msgstr ""
+
+#: ../../../CHANGES.rst:228
+msgid "0.9.5 (2014/07/10)"
+msgstr ""
+
+#: ../../../CHANGES.rst:233
+msgid "Add supporting Python-3.4"
+msgstr ""
+
+#: ../../../CHANGES.rst:238
+msgid ""
+"BB-PR#3: Skip building process if mo file is newer than po file. Thanks "
+"to Nozomu Kaneko."
+msgstr ""
+
+#: ../../../CHANGES.rst:244
+msgid ""
+"BB-PR#2, BB-PR#4: ``update-txconfig-resources`` disregarded ``--pot-dir``"
+" option. Thanks to Giacomo Spettoli, Takeshi Komiya."
+msgstr ""
+
+#: ../../../CHANGES.rst:246
+msgid ""
+"BB-PR#5: ``update-txconfig-resources`` command raise errors when project "
+"name includes spaces and dots. Thanks to Takeshi Komiya."
+msgstr ""
+
+#: ../../../CHANGES.rst:250
+msgid "0.9.4 (2013/12/10)"
+msgstr ""
+
+#: ../../../CHANGES.rst:255
+msgid "Now using setuptools instead of distribute."
+msgstr ""
+
+#: ../../../CHANGES.rst:260
+msgid ""
+"BB#3: ``update-txconfig-resources`` command now detect project-name from "
+"``.tx/config`` that already exists."
+msgstr ""
+
+#: ../../../CHANGES.rst:266
+msgid "sphinx-intl didn't use SPHINXINTL_CONFIG environment value."
+msgstr ""
+
+#: ../../../CHANGES.rst:267
+msgid "tox test raises a error with transifex-client-0.10"
+msgstr ""
+
+#: ../../../CHANGES.rst:270
+msgid "0.9.3 (2013/04/20)"
+msgstr ""
+
+#: ../../../CHANGES.rst:275
+msgid ""
+"because ``--config`` option did not consider directory path, locale_dir "
+"did not contain directory path to ``conf.py`` file."
+msgstr ""
+
+#: ../../../CHANGES.rst:279
+msgid "0.9.2 (2013/4/11)"
+msgstr ""
+
+#: ../../../CHANGES.rst:284
+msgid "Add ``stat`` command for displaying statistics like 'msgfmt --statistics'."
+msgstr ""
+
+#: ../../../CHANGES.rst:285
+msgid "Documentation and error messages are improved."
+msgstr ""
+
+#: ../../../CHANGES.rst:290
+msgid ""
+"update command did not detect pot/po difference when translated count and"
+" untranslated count are not difference."
+msgstr ""
+
+#: ../../../CHANGES.rst:295
+msgid "0.9.1 (2013/4/10)"
+msgstr ""
+
+#: ../../../CHANGES.rst:300
+msgid "Add flake8 test and fix some errors."
+msgstr ""
+
+#: ../../../CHANGES.rst:305
+msgid ""
+"Drop multiple ``locale directories`` feature. Now use only first "
+"directory of ``locale_dirs`` in conf.py."
+msgstr ""
+
+#: ../../../CHANGES.rst:311
+msgid ""
+"Add --pot-dir option. default is ``pot`` directory under ``locale_dir``. "
+"If you using Sphinx default settings, ``-p _build/locale`` is useful."
+msgstr ""
+
+#: ../../../CHANGES.rst:313
+msgid "Add append/deprecated msgid count information for ``update`` command."
+msgstr ""
+
+#: ../../../CHANGES.rst:318
+msgid "Fix: ``-c`` option is not working. Thanks @tk0miya!"
+msgstr ""
+
+#: ../../../CHANGES.rst:321
+msgid "0.9.0 (2013/4/7)"
+msgstr ""
+
+#: ../../../CHANGES.rst:322
+msgid "First release that provides these commands:"
+msgstr ""
+
+#: ../../../CHANGES.rst:324
+msgid "update"
+msgstr ""
+
+#: ../../../CHANGES.rst:325
+msgid "build"
+msgstr ""
+
+#: ../../../CHANGES.rst:326
+msgid "create-transifexrc"
+msgstr ""
+
+#: ../../../CHANGES.rst:327
+msgid "create-txconfig"
+msgstr ""
+
+#: ../../../CHANGES.rst:328
+msgid "update-txconfig-resources"
+msgstr ""
+

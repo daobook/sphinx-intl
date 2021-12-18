@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Sphinx team
+# This file is distributed under the same license as the sphinx-intl
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinx-intl 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-20 16:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../dev.rst:3
+msgid "Development"
+msgstr "开发"
+
+#: ../../dev.rst:6
+msgid "Code of Conduct"
+msgstr "行为准则"
+
+#: ../../../CODE_OF_CONDUCT.rst:1
+msgid "By contributing you agree to abide by the `Contributor Code of Conduct`_."
+msgstr "您同意遵守 `贡献者行为准则`_ 才可以贡献。"
+
+#: ../../dev.rst:11
+msgid "Contribution Guideline"
+msgstr "贡献指南"
+
+#: ../../../CONTRIBUTING.rst:2
+msgid "Report Issue"
+msgstr "报告议题"
+
+#: ../../../CONTRIBUTING.rst:4 ../../../CONTRIBUTING.rst:11
+msgid "**To Be Written**"
+msgstr "尚待撰写"
+
+#: ../../../CONTRIBUTING.rst:6
+msgid "https://github.com/sphinx-doc/sphinx-intl/issues"
+msgstr ""
+
+#: ../../../CONTRIBUTING.rst:9
+msgid "Pull Request"
+msgstr ""
+
+#: ../../../CONTRIBUTING.rst:13
+msgid "https://github.com/sphinx-doc/sphinx-intl/pulls"
+msgstr ""
+
+#: ../../dev.rst:16
+msgid "Setup development environment"
+msgstr "设置开发环境"
+
+#: ../../dev.rst:18
+msgid "Requires supported Python version"
+msgstr "需要支持的 Python 版本"
+
+#: ../../dev.rst:19
+msgid "do setup under sphinx-intl.git repository root as::"
+msgstr "在 sphinx-intl.git 仓库根目录下进行设置，作为 ::"
+
+#: ../../dev.rst:25
+msgid "Testing"
+msgstr "测试"
+
+#: ../../dev.rst:27
+msgid "Tests with supported python version that are in:"
+msgstr "支持 Python 版本的测试，在："
+
+#: ../../dev.rst:29
+msgid "``setup.py``"
+msgstr ""
+
+#: ../../dev.rst:30
+msgid "``tox.ini``"
+msgstr ""
+
+#: ../../dev.rst:31
+msgid "``.travis.yml``"
+msgstr ""
+
+#: ../../dev.rst:35
+msgid "Run test"
+msgstr "运行测试"
+
+#: ../../dev.rst:37
+msgid "Just run tox::"
+msgstr "仅运行 tox::"
+
+#: ../../dev.rst:41
+msgid "tox have several sections for testing."
+msgstr "tox 有几个部分可以测试。"
+
+#: ../../dev.rst:44
+msgid "CI (Continuous Integration)"
+msgstr "CI（持续化集成）"
+
+#: ../../dev.rst:46
+msgid "All tests will be run on Travis CI service."
+msgstr "所有测试都将在 Travis CI 服务上运行。"
+
+#: ../../dev.rst:48
+msgid "https://travis-ci.org/sphinx-doc/sphinx-intl"
+msgstr ""
+
+#: ../../dev.rst:51
+msgid "Releasing"
+msgstr "发布"
+
+#: ../../dev.rst:54
+msgid "New package version"
+msgstr "新的软件包版本"
+
+#: ../../dev.rst:56
+msgid ""
+"The sphinx-intl package will be uploaded to PyPI: "
+"https://pypi.org/project/sphinx-intl/."
+msgstr ""
+"sphinx-intl 软件包将被上传到 PyPI："
+"https://pypi.org/project/sphinx-intl/ 。"
+
+#: ../../dev.rst:58
+msgid "Here is a release procefure for releasing."
+msgstr "这里有一个释放的程序，用于发布。"
+
+#: ../../../checklist.rst:3
+msgid "Procedure:"
+msgstr "程序："
+
+#: ../../../checklist.rst:5
+msgid ""
+"check travis-ci testing result: https://travis-ci.org/sphinx-doc/sphinx-"
+"intl"
+msgstr "检查 travis-ci 测试结果。https://travis-ci.org/sphinx-doc/sphinx-"
+"intl"
+
+#: ../../../checklist.rst:6
+msgid "update release version/date in ``CHANGES.rst``"
+msgstr "更新 ``CHANGES.rst`` 中的发行版本/日期"
+
+#: ../../../checklist.rst:7
+msgid "``python setup.py release sdist bdist_egg``"
+msgstr ""
+
+#: ../../../checklist.rst:8
+msgid "``twine upload dist/<target-package-file>``"
+msgstr ""
+
+#: ../../../checklist.rst:9
+msgid "check PyPI page: https://pypi.org/p/sphinx-intl"
+msgstr ""
+
+#: ../../../checklist.rst:10
+msgid ""
+"tagging with version name that MUST following semver. e.g.: ``git tag "
+"1.0.1``"
+msgstr "用必须在 semver 之后的版本名进行标记，例如：``git tag 1.0.1``。"
+
+#: ../../../checklist.rst:11
+msgid "``git push --tags`` to push tag"
+msgstr ""
+
+#: ../../../checklist.rst:12
+msgid ""
+"bump version in ``sphinx_intl/__init__.py`` and ``CHANGES.rst`` then "
+"commit/push them onto GitHub"
+msgstr ""
+"在 ``sphinx_intl/__init__.py`` 和 ``CHANGES.rst`` 中提升版本，"
+"然后提交/推送到 GitHub"
+
+#: ../../dev.rst:64
+msgid "Updated documentation"
+msgstr "更新文档"
+
+#: ../../dev.rst:66
+msgid ""
+"Sphinx documentation under ``doc/`` directory on the master branch will "
+"be automatically uploaded into ReadTheDocs: http://sphinx-intl.rtfd.io/."
+msgstr ""
+"主分支上 ``doc/`` 目录下的 Sphinx 文档将自动上传"
+"到 ReadTheDocs: http://sphinx-intl.rtfd.io/。""
+

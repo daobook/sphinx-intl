@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Sphinx team
+# This file is distributed under the same license as the sphinx-intl
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinx-intl 2.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-20 17:56+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.rst:3
+msgid "sphinx-intl: translation support utility for Sphinx"
+msgstr "sphinx-intl: 用于支持 Sphinx 的翻译工具"
+
+#: ../../index.rst:5
+msgid ""
+"``sphinx-intl`` is a utility tool that provides several features that "
+"make it easy to translate and to apply translation to Sphinx_ generated "
+"document. Optional: support the Transifex service for translation with "
+"Sphinx_ ."
+msgstr ""
+"``sphinx-intl`` 是一个实用工具，它提供了一些功能使得翻译和应用翻译到 Sphinx_ 生成的文件变得容易。可选：支持 "
+"Transifex 服务，用于 Sphinx_  翻译。"
+
+msgid "Read the Docs (master)"
+msgstr ""
+
+msgid "PyPI"
+msgstr ""
+
+msgid "PyPI - Python 版本"
+msgstr ""
+
+msgid "许可"
+msgstr ""
+
+#, fuzzy
+msgid "Travis (.org) 分支"
+msgstr "Travis (.org) 分支"
+
+msgid "GitHub stars"
+msgstr ""
+
+#: ../../index.rst:35
+msgid "Documentation"
+msgstr "文档"
+
+#: ../../index.rst:37
+msgid "http://sphinx-intl.rtfd.io/"
+msgstr ""
+
+#: ../../index.rst:41
+msgid "License"
+msgstr "许可"
+
+#: ../../index.rst:42
+msgid "Licensed under the BSD license."
+msgstr "在 BSD 许可证下授权。"
+
+#: ../../index.rst:46
+msgid "Contents"
+msgstr "目录"
+
+#~ msgid "PyPI - Python Version"
+#~ msgstr "PyPI - Python 版本"
+

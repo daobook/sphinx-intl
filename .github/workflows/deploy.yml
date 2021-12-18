@@ -2,7 +2,7 @@ name: deploy
 on:
   push:
     branches:
-      - develop
+      - rtd
 
 jobs:
   build:
@@ -18,27 +18,18 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r doc/requirements.txt
-          pip install sphinx-intl
-      
+
       - name: Clone
         run: |
           git clone https://github.com/sphinx-locales/sphinx-intl.git draft
 
       - name: Build the book
         run: |
-          cp -rf draft/locales/ doc/locale/
-          rm -rf draft/
           cd doc
-          sphinx-build -b gettext ./ _build/gettext
-          sphinx-intl update -p _build/gettext -l zh_CN
-          sphinx-build -D language=en -b html ./ _build/html/
-          sphinx-build -D language=zh_CN -b html ./ _build/html/zh-CN
-          cd ..
-          cp -rf doc/_build/ _build/
-          rm -rf doc/_build/
+          sphinx-build -D language=zh_CN -b html ./ _build/html
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _build/html
+          publish_dir: doc/_build/html
