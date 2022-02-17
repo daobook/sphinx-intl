@@ -13,9 +13,12 @@ from .pycompat import relpath
 # utility functions
 
 def get_lang_dirs(path):
-    dirs = [relpath(d, path)
-            for d in glob(path+'/[a-z]*')
-            if os.path.isdir(d) and not d.endswith('pot')]
+    dirs = [
+        relpath(d, path)
+        for d in glob(f'{path}/[a-z]*')
+        if os.path.isdir(d) and not d.endswith('pot')
+    ]
+
     return (tuple(dirs),)
 
 
@@ -48,13 +51,13 @@ def update(locale_dir, pot_dir, languages, line_width=76):
             basename = relpath(base, pot_dir)
             for lang in languages:
                 po_dir = os.path.join(locale_dir, lang, 'LC_MESSAGES')
-                po_file = os.path.join(po_dir, basename + ".po")
+                po_file = os.path.join(po_dir, f'{basename}.po')
                 cat_pot = c.load_po(pot_file)
                 if os.path.exists(po_file):
                     cat = c.load_po(po_file)
-                    msgids = set([m.id for m in cat if m.id])
+                    msgids = {m.id for m in cat if m.id}
                     c.update_with_fuzzy(cat, cat_pot)
-                    new_msgids = set([m.id for m in cat if m.id])
+                    new_msgids = {m.id for m in cat if m.id}
                     if msgids != new_msgids:
                         added = new_msgids - msgids
                         deleted = msgids - new_msgids
@@ -93,7 +96,7 @@ def build(locale_dir, output_dir, languages):
                 if ext != ".po":
                     continue
 
-                mo_file = os.path.join(dirpath_output, base + ".mo")
+                mo_file = os.path.join(dirpath_output, f'{base}.mo')
                 po_file = os.path.join(dirpath, filename)
 
                 if (os.path.exists(mo_file) and

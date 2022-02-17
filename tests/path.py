@@ -157,10 +157,7 @@ class path(text_type):
         :param append:
             If ``True`` given `bytes` are added at the end of the file.
         """
-        if append:
-            mode = 'ab'
-        else:
-            mode = 'wb'
+        mode = 'ab' if append else 'wb'
         f = open(self, mode=mode)
         try:
             f.write(bytes)
