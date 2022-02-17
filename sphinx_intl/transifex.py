@@ -77,7 +77,7 @@ def create_transifexrc(transifex_username, transifex_password):
         click.echo('{0} already exists, skipped.'.format(target))
         return
 
-    if not transifex_username or not 'transifex_password':
+    if not transifex_username:
         msg = textwrap.dedent("""\
         You need transifex username/password by command option or environment.
         command option: --transifex-username, --transifex-password

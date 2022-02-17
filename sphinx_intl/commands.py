@@ -50,9 +50,12 @@ def read_config(path, passed_tags):
 
 
 def get_lang_dirs(path):
-    dirs = [relpath(d, path)
-            for d in glob(path+'/[a-z]*')
-            if os.path.isdir(d) and not d.endswith('pot')]
+    dirs = [
+        relpath(d, path)
+        for d in glob(f'{path}/[a-z]*')
+        if os.path.isdir(d) and not d.endswith('pot')
+    ]
+
     return (tuple(dirs),)
 
 
@@ -203,8 +206,7 @@ def main(ctx, config, tag):
     ctx.transifex_project_name = None
     target = os.path.normpath('.tx/config')
     if os.path.exists(target):
-        matched = re.search(r'\[(.*)\..*\]', open(target, 'r').read())
-        if matched:
+        if matched := re.search(r'\[(.*)\..*\]', open(target, 'r').read()):
             ctx.transifex_project_name = matched.groups()[0]
             click.echo(
                 'Project name loaded from .tx/config: {0}'.format(
